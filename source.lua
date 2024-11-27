@@ -1,12 +1,12 @@
 --[[
     Version: 1.0.5
-    Last Update: 14 / 11 / 2022 | Day / Month / Year
+    Last Update: 27 / 11 / 2024 | Day / Month / Year
 ]]--
 
 --// Source
 function obfuscate(source,VarName,WaterMark)
-        warn("Started obfuscate")
-        local Variable = VarName or "Taurus_"
+        warn("Started obfuscating")
+        local Variable = VarName or "Slix_"
         local WM
 
         if source == nil then
@@ -68,15 +68,15 @@ function obfuscate(source,VarName,WaterMark)
             local highest = 1
 
             local topic = {
-                "Deobfuscate?",
+                "Deobfuscate? idk.",
                 "Hello World!",
                 "IronBrew Fork? Nope.",
                 "PSU Fork? Nope.",
                 "Touch some grass",
-                "New update when?",
-                "GhostyDuckyy",
-                "Free obfuscator!",
-                "E",
+                "New update when? never.",
+                "Snxdfer",
+                "Slix obfuscator by 00Fazee!",
+                "slixfuscator on top",
                 random_(math.random(50,150)),
             }
 
@@ -135,7 +135,7 @@ function obfuscate(source,VarName,WaterMark)
 
         local obfuscated = WM..troll_var.."; "..Loadstring.."; "..fake_code(math.random(2,4), math.random(400,600))..TableByte.."; "..[[local ]]..Variable..tostring(random_(math.random(15,20))).." = "..func[1].."("..func[2]..")".."; "..fake_code(math.random(2,4), math.random(string.len(source) / 2, string.len(source) * 2))
         setclipboard(obfuscated)
-        warn("Done obfuscate in "..tostring(tick() - ticks).." second")
+        warn("Done obfuscate in "..tostring(tick() - ticks).." seconds")
     return
 end
 
