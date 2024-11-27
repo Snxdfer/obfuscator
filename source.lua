@@ -16,9 +16,9 @@ function obfuscate(source,VarName,WaterMark)
         local ticks = tick()
 
         if typeof(WaterMark) == "string" and WaterMark ~= nil then
-            WM = "    "..tostring(WaterMark).." | Secure by elrandom#1311"
+            WM = "    "..tostring(WaterMark).." | Secure by elrandom#1311 & Slixfuscator"
         else
-            WM = "    ".."WaterMark".." | Secure by elrandom#1311"
+            WM = "    ".."WaterMark".." | Secure by elrandom#1311 & Slixfuscator"
         end
 
         WM = "--[[".."\n".. tostring(WM) .."\n".."]]--".."\n\n"
